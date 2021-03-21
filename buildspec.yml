@@ -1,20 +1,26 @@
 version: 0.2
 
 phases:
+  install:
+    commands:
+      - echo Installing Node
+      - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+      - export NVM_DIR="$HOME/.nvm"
+      - [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+      - [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+      - nvm install node --lts
+      - echo Installing Yarn and PM2...
+      - npm i yarn pm2 -g
+
   pre_build:
     commands:
       - echo Installing dependencies...
-
       - yarn
-
   build:
     commands:
-      # - echo Testing...
-
+      # - echo Testing
       # - yarn test
-
       - echo Building...
-
       - pm2 restart portfolio
 artifacts:
   files:
