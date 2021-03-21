@@ -2,10 +2,9 @@ import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
   :root {
-    font-size: 60%;
-
     --color-darkGray: #202833;
     --color-white: #eaebec;
+    --color-green: #60ede2;
   }
 
   * {
@@ -26,8 +25,8 @@ export default createGlobalStyle`
     background: var(--color-darkGray)
   }
 
-  body, input, button {
-    font-family: Roboto, sans-serif;
+  body, input, button, a{
+    font-family: Quicksand, sans-serif;
     color: var(--color-white)
   }
 
