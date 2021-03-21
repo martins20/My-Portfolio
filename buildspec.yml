@@ -4,8 +4,8 @@ phases:
   install:
     commands:
       - echo Installing Node
-      - curl -fsSL https://deb.nodesource.com/setup_15.x | -E bash -
-      - sudo apt-get install -y nodejs
+      - curl -fsSL https://deb.nodesource.com/setup_14.x | -E bash -
+      - apt-get install -y nodejs
 
       - echo Installing Yarn and PM2...
       - npm i yarn pm2 -g
