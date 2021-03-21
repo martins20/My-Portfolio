@@ -3,6 +3,9 @@ import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
   :root {
     font-size: 60%;
+
+    --color-darkGray: #202833;
+    --color-white: #eaebec;
   }
 
   * {
@@ -19,10 +22,13 @@ export default createGlobalStyle`
   body, html, #root {
     width: 100%;
     height: 100%;
+
+    background: var(--color-darkGray)
   }
 
   body, input, button {
     font-family: Roboto, sans-serif;
+    color: var(--color-white)
   }
 
   h1, h2, h3, h4, h5, h6 {
