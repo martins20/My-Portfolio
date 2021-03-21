@@ -25,7 +25,7 @@ export default createGlobalStyle`
     background: var(--color-darkGray)
   }
 
-  body, input, button, a{
+  body, input, button, a {
     font-family: Quicksand, sans-serif;
     color: var(--color-white)
   }

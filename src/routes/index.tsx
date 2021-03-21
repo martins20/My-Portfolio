@@ -7,6 +7,10 @@ const Routes: React.FC = () => (
   <Router>
     <Switch>
       <Route path="/" exact component={Home} />
+      <Route path="/skills" exact component={Home} />
+      <Route path="/about" exact component={Home} />
+      <Route path="/projects" exact component={Home} />
+      <Route path="/contact" exact component={Home} />
     </Switch>
   </Router>
 );

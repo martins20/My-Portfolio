@@ -1,14 +1,13 @@
 import React, { useCallback } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-
+import { useLocation } from 'react-router-dom';
 import useHamburgerMenu from '../../hooks/HamburguerMenu';
-import { HamburguerMenuOpenIcon } from '../../styles/icons';
-import HamburguerMenu from '../HamburguerMenu';
+import { HamburguerMenuCloseIcon } from '../../styles/icons';
 
-import { Container, Logo, TabsContainer, StyledLink } from './styles';
+import { Container, Header, StyledLink, LinksContainer } from './styles';
 
-const Header: React.FC = () => {
-  const { toggleHamburguerMenu, hamburgerMenuStatus } = useHamburgerMenu();
+const HamburguerMenu: React.FC = () => {
+  const { toggleHamburguerMenu } = useHamburgerMenu();
+
   const { pathname } = useLocation();
 
   const handleActiveLink = useCallback(
@@ -22,15 +21,11 @@ const Header: React.FC = () => {
 
   return (
     <Container>
-      <Logo>
-        <Link to="/">
-          <b>{`<`}</b>
-          <b>martins20</b>
-          <b>{`/>`}</b>
-        </Link>
-      </Logo>
+      <Header>
+        <HamburguerMenuCloseIcon onClick={toggleHamburguerMenu} />
+      </Header>
 
-      <TabsContainer>
+      <LinksContainer>
         <StyledLink to="about" isActive={handleActiveLink('about')}>
           About me
         </StyledLink>
@@ -43,13 +38,9 @@ const Header: React.FC = () => {
         <StyledLink to="contact" isActive={handleActiveLink('contact')}>
           Contact
         </StyledLink>
-      </TabsContainer>
-
-      <HamburguerMenuOpenIcon onClick={toggleHamburguerMenu} />
-
-      {hamburgerMenuStatus && <HamburguerMenu />}
+      </LinksContainer>
     </Container>
   );
 };
 
-export default Header;
+export default HamburguerMenu;

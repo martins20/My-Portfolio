@@ -5,63 +5,49 @@ interface IStyledLinkProps {
   isActive?: boolean;
 }
 
-export const Container = styled.header`
+export const Container = styled.main`
   display: flex;
+  flex-direction: column;
 
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-end;
+
+  height: 100vh;
+  padding: 10px;
+
+  width: 150px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  padding: 30px;
+
+  background: var(--color-darkGray);
 `;
 
-export const Logo = styled.section`
+export const Header = styled.header`
   display: flex;
-  align-items: center;
-
-  > a {
-    text-decoration: none;
-
-    > b {
-      &:first-child,
-      &:last-child {
-        color: var(--color-green);
-      }
-
-      &:nth-child(2) {
-        margin: 0 5px;
-      }
-
-      font-size: 1.5rem;
-    }
-  }
-
-  @media (max-width: 350px) {
-    > a > b {
-      font-size: 1.2rem;
-    }
-  }
+  width: 100%;
 `;
 
-export const TabsContainer = styled.section`
+export const LinksContainer = styled.main`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
 
-  width: 45%;
-  max-width: 500px;
+  margin-top: 30px;
 
-  @media (max-width: 699px) {
-    display: none;
+  > a + a {
+    margin-top: 20px;
   }
 `;
 
 export const StyledLink = styled(RouterLink)<IStyledLinkProps>`
-  > & + a {
-    margin-left: 10px;
-  }
-
   text-decoration: none;
   font-size: 300;
 
   position: relative;
+
+  text-align: end;
 
   &:hover {
     color: var(--color-green);
