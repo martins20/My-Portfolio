@@ -59,7 +59,7 @@ export const StyledLink = styled(RouterLink)<IStyledLinkProps>`
 
       position: absolute;
       bottom: -1px;
-      left: 0;
+      right: 0;
 
       width: 35px;
       height: 2px;
@@ -78,7 +78,7 @@ export const StyledLink = styled(RouterLink)<IStyledLinkProps>`
 
         position: absolute;
         bottom: -1px;
-        left: 0;
+        right: 0;
 
         width: 35px;
         height: 2px;
