@@ -26,9 +26,6 @@ const HamburguerMenu: React.FC = () => {
       </Header>
 
       <LinksContainer>
-        <StyledLink to="about" isActive={handleActiveLink('about')}>
-          About me
-        </StyledLink>
         <StyledLink to="skills" isActive={handleActiveLink('skills')}>
           Skills
         </StyledLink>

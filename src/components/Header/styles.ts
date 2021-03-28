@@ -45,8 +45,8 @@ export const TabsContainer = styled.section`
   align-items: center;
   justify-content: space-between;
 
-  width: 45%;
-  max-width: 500px;
+  width: 35%;
+  max-width: 400px;
 
   @media (max-width: 699px) {
     display: none;

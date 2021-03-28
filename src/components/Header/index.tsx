@@ -31,9 +31,6 @@ const Header: React.FC = () => {
       </Logo>
 
       <TabsContainer>
-        <StyledLink to="about" isActive={handleActiveLink('about')}>
-          About me
-        </StyledLink>
         <StyledLink to="skills" isActive={handleActiveLink('skills')}>
           Skills
         </StyledLink>

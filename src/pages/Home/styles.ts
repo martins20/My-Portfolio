@@ -23,7 +23,7 @@ export const GreetingContainer = styled.section`
 
   margin-top: 100px;
 
-  /* border: 1px solid red; */
+  border: 1px solid red;
 
   padding: 0 20px;
 
@@ -35,7 +35,7 @@ export const GreetingContainer = styled.section`
   }
 `;
 
-export const AboutContainer = styled.section`
+export const GreetingsInfo = styled.section`
   display: flex;
   flex-direction: column;
   align-items: flex-start;

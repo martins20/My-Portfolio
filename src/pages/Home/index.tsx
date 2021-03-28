@@ -11,7 +11,7 @@ import OutlineButton from '../../components/OutlineButton';
 import {
   Container,
   GreetingContainer,
-  AboutContainer,
+  GreetingsInfo,
   Profession,
   IlustrationContainer,
 } from './styles';
@@ -27,7 +27,7 @@ const Home: React.FC = () => {
       <Header />
 
       <GreetingContainer>
-        <AboutContainer>
+        <GreetingsInfo>
           <Profession>Desenvolvedor FullStack</Profession>
           <h1>Paulo César Martins</h1>
           <p>
@@ -38,7 +38,7 @@ const Home: React.FC = () => {
           </p>
 
           <OutlineButton label="Ver Currículo" onClick={handleDownloadResume} />
-        </AboutContainer>
+        </GreetingsInfo>
 
         <IlustrationContainer>
           <img src={programmer} alt="programmer" />
