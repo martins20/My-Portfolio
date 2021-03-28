@@ -21,7 +21,7 @@ A website to provide all my skills and experiences with development for all recr
 </div>
 
 <div align="center">
-  <img src="assets/Home-Mobile.png" />
+  <img src="assets/About-Mobile.png" />
 </div>
 
 
