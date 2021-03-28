@@ -10,6 +10,17 @@ export const Container = styled.header`
 
   align-items: center;
   justify-content: space-between;
+
+  max-width: calc(100% - 20px);
+  position: fixed;
+  width: 100%;
+
+  left: 10px;
+  top: 0px;
+
+  padding: 10px;
+
+  background: var(--color-darkGray);
 `;
 
 export const Logo = styled.section`

@@ -12,15 +12,13 @@ export const Container = styled.main`
   align-items: flex-end;
 
   height: 100vh;
-  padding: 10px;
+  padding: 10px 20px;
 
   width: 150px;
 
   position: absolute;
   top: 0;
   right: 0;
-
-  padding: 30px;
 
   background: var(--color-darkGray);
 `;

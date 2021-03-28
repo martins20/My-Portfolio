@@ -5,6 +5,7 @@ export default createGlobalStyle`
     --color-darkGray: #202833;
     --color-white: #eaebec;
     --color-green: #60ede2;
+    --color-light-green: #77fcf2;
   }
 
   * {
@@ -21,8 +22,9 @@ export default createGlobalStyle`
   body, html, #root {
     width: 100%;
     height: 100%;
+    background: var(--color-darkGray);
 
-    background: var(--color-darkGray)
+
   }
 
   body, input, button, a {

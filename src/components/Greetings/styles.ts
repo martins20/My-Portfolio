@@ -5,17 +5,17 @@ export const Container = styled.section`
 
   grid-template-columns: 1fr 1fr;
 
-  margin-top: 100px;
-
-  border: 1px solid red;
-
   padding: 0 20px;
+
+  height: 100vh;
 
   @media (max-width: 1000px) {
     display: flex;
 
     flex-direction: column;
     padding: 0;
+
+    margin-top: 30px;
   }
 `;
 
@@ -50,6 +50,10 @@ export const GreetingsInfo = styled.section`
       font-size: 2rem;
       line-height: 2rem;
     }
+
+    > button {
+      align-self: center;
+    }
   }
 `;
 
@@ -72,6 +76,7 @@ export const IlustrationContainer = styled.section`
   flex-direction: column;
 
   align-items: center;
+  align-self: center;
 
   > img {
     min-width: 350px;

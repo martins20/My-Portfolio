@@ -6,12 +6,24 @@ export const Container = styled.main`
   flex-direction: column;
   flex: 1;
 
+  height: 100vh;
   width: 100%;
-  height: 100%;
 
-  padding: 50px;
+  padding: 10px;
+
+  scroll-snap-type: y mandatory;
+
+  overflow-y: scroll;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 
   @media (max-width: 700px) {
-    padding: 30px;
+    padding: 20px;
+
+    > section {
+      margin: 50px 0;
+    }
   }
 `;
